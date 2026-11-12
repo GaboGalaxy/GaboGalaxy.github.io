@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>el universo y lo que lo compone</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <div id="pantalla1" class="pantalla activa">
+    <h1 class="texto">las galaxias</h1>
+    <div class="texto">descubramos que las conforman!</div>
+    <button class="boton-centro" onclick="mostrarPantalla('pantalla2')">inicio</button>
+    
+    <!-- BOTONES NUEVOS ABAJO -->
+    <div class="contenedor-inferior">
+      <button class="boton-mini" onclick="mostrarPantalla('pantallaCreditos')">créditos</button>
+      <button class="boton-mini" onclick="mostrarPantalla('pantallaContacto')">contacto</button>
+    </div>
+
+    <img src="planeta.jpg" class="p1">
+    <img src="planeta2.jpg" class="p2">
+    <img src="planeta3.jpg" class="p3">
+    <img src="planeta4.jpg" class="p4">
+  </div>
+
+  <!-- PANTALLA 2 - MENÚ -->
+  <div id="pantalla2" class="pantalla">
+    <button class="boton-regreso" onclick="mostrarPantalla('pantalla1')">volver</button>
+    <h1 class="texto">galaxias, un tema mas que interesante</h1>
+    <p class="texto" style="text-align: center; max-width: 600px; margin: 0 auto 20px auto;">
+     ¿que es una galaxia? de forma muy resumida:
+      Una galaxia es un enorme conjunto de estrellas, planetas, gas, polvo cósmico y materia oscura unidos por la fuerza de la gravedad.
+    </p>
+    <div class="texto">elige un tema principal!</div>
+    <button class="boton-lateral izq" onclick="mostrarPantalla('pantalla3')">SU ESTRUCTURA Y ANATOMIA</button>
+    <button class="boton-lateral der" onclick="mostrarPantalla('pantalla4')">VIDA Y MOVIMIENTO EN LAS GALAXIAS</button>
+    <button class="boton-abajo" onclick="mostrarPantalla('pantalla5')">LA GRAN ESCALA DEL UNIVERSO</button>
+  </div>
+
+ 
+  <div id="pantalla3" class="pantalla">
+    <button class="boton-regreso" onclick="mostrarPantalla('pantalla2')">volver</button>
+    <h1 class="texto">Su estructura y anatomia</h1>
+    
+    
+    <div class="placeholder-imagen"><img src="iz.png"> </div>
+
+    <h2>1. Tipos de Galaxias</h2>
+    <p>Existen principalmente tres tipos de galaxias: espirales (como la Vía Láctea), elípticas (forma de óvalo con estrellas viejas) e irregulares (sin forma definida por choques gravitacionales).</p>
+    
+    <h2>2. Núcleo Galáctico</h2>
+    <p>En el centro de la gran mayoría de las galaxias habita un agujero negro supermasivo que mantiene unidas a las estrellas gracias a su inmensa gravedad.</p>
+    
+    <h2>3. Materia Oscura</h2>
+    <p>La mayor parte de la masa de una galaxia no es visible; está formada por materia oscura que evita que las estrellas salgan disparadas al girar.</p>
+  </div>
+
+  
+  <div id="pantalla4" class="pantalla">
+    <button class="boton-regreso" onclick="mostrarPantalla('pantalla2')">volver</button>
+    <h1 class="texto">Vida y movimiento en las galaxias</h1>
+    
+   
+    <div class="placeholder-imagen"><img src="der.jpg"></div>
+
+    <h2>1. Formación de Estrellas</h2>
+    <p>Las galaxias contienen nubes de polvo y gas llamadas nebulosas, donde la gravedad condensa la materia hasta dar nacimiento a nuevas estrellas.</p>
+    
+    <h2>2. La Vía Láctea</h2>
+    <p>Es nuestra galaxia, una espiral con más de 100 mil millones de estrellas, y nuestro Sistema Solar se encuentra en uno de sus brazos externos llamado Orión.</p>
+    
+    <h2>3. Colisiones Galácticas</h2>
+    <p>Las galaxias pueden chocar entre sí. De hecho, la Vía Láctea colisionará con la galaxia de Andrómeda dentro de unos 4,500 millones de años.</p>
+  </div>
+
+  
+  <div id="pantalla5" class="pantalla">
+    <button class="boton-regreso" onclick="mostrarPantalla('pantalla2')">volver</button>
+    <h1 class="texto">La gran escala del universo</h1>
+    
+    
+    <div class="placeholder-imagen"><img src="ab.jpg"></div>
+
+    <h2>1. Universos Múltiples de Galaxias</h2>
+    <p>Se estima que en el universo observable existen más de 2 billones de galaxias, cada una albergando miles de millones de sistemas solares.</p>
+    
+    <h2>2. Movimiento Espacial</h2>
+    <p>Las galaxias no están estáticas en el espacio, sino que se desplazan a gran velocidad alejándose unas de otras debido a la expansión del universo.</p>
+    
+    <h2>3. Agrupación Galáctica</h2>
+    <p>Las galaxias raras veces están solas; suelen viajar juntas formando cúmulos y supercúmulos conectados por redes gigantes de materia viva y oscura.</p>
+  </div>
+
+  
+  <div id="pantallaCreditos" class="pantalla">
+    <button class="boton-regreso" onclick="mostrarPantalla('pantalla1')">volver</button>
+    <h1 class="texto">Créditos</h1>
+    <p class="texto">Hecho por:Vazquez Florida Aaron Gabriel</p>
+    <p class="texto">"que tu vida brille tanto como las estrellas"</p>
+    <img src="yo.png">
+        <h1 class"texto"> fuentes</h1>
+    <a href="https://ciencia.nasa.gov"> https://ciencia.nasa.gov/astronomia/galaxias/</a>
+    <a href="https://ciencia.unam.mx/"> https://ciencia.nasa.gov/astronomia/galaxias/</a>
+    <a href="https://www.nationalgeographic.com.es/ciencia"> https://ciencia.nasa.gov/astronomia/galaxias/</a>
+    <a href="https://es.wikipedia.org/wiki/Universo_observable"> https://ciencia.nasa.gov/astronomia/galaxias/</a>
+
+
+
+  </div>
+
+  <!-- PANTALLA 7 - CONTACTO -->
+  <div id="pantallaContacto" class="pantalla">
+    <button class="boton-regreso" onclick="mostrarPantalla('pantalla1')">volver</button>
+    <h1 class="texto">Contacto</h1>
+    <p class="texto">Correo: (esto es un correo falso, no quiero que me llegue algo enserio,jaja) SuperGaboCorreo@Gmail.com</p>
+    <div style="text-align: center; margin-top: 15px;">
+      <textarea id="campoMensaje" placeholder="Escribe tu mensaje..."></textarea><br>
+      <button class="boton-mini" onclick="enviarMensaje()">Enviar</button>
+      <p id="textoEnviado" class="texto" style="display: none; color: #00f7ff; margin-top: 10px;">¡enviado!</p>
+    </div>
+  </div>
+
+<script>
+  function mostrarPantalla(id){
+    document.querySelectorAll('.pantalla').forEach(p => p.classList.remove('activa'));
+    document.getElementById(id).classList.add('activa');
+  }
+
+  function enviarMensaje(){
+    document.getElementById('campoMensaje').value = '';
+    const confirmacion = document.getElementById('textoEnviado');
+    confirmacion.style.display = 'block';
+    setTimeout(() => {
+      confirmacion.style.display = 'none';
+    }, 3000);
+  }
+</script>
+
+</body>
+</html>
